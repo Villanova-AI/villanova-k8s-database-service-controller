@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   ~
-  ~ Copyright 2015-Present Entando Inc. (http://www.entando.com) All rights reserved.
+  ~ Copyright 2015-Present Villanova Spa (http://www.villanova.com) All rights reserved.
   ~
   ~ This library is free software; you can redistribute it and/or modify it under
   ~ the terms of the GNU Lesser General Public License as published by the Free
@@ -19,22 +19,22 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.entando</groupId>
-        <artifactId>entando-quarkus-parent</artifactId>
+        <groupId>ai.villanova</groupId>
+        <artifactId>villanova-quarkus-parent</artifactId>
         <version>7.3.0</version>
         <relativePath/>
     </parent>
-    <artifactId>entando-k8s-database-service-controller</artifactId>
+    <artifactId>villanova-k8s-database-service-controller</artifactId>
     <version>7.3.0</version>
-    <name>Entando K8S Controller for shared Database Services</name>
-    <description>Entando's K8S Controller for shared Database Services</description>
-    <url>https://central.entando.com</url>
+    <name>Villanova K8S Controller for shared Database Services</name>
+    <description>Villanova's K8S Controller for shared Database Services</description>
+    <url>https://central.villanova.com</url>
     <inceptionYear>2019</inceptionYear>
 
     <!-- LICENSE AND INFO -->
     <organization>
-        <name>Entando Inc.</name>
-        <url>http://www.entando.com/</url>
+        <name>Villanova Spa</name>
+        <url>http://www.villanova.com/</url>
     </organization>
 
     <licenses>
@@ -61,10 +61,10 @@
     <properties>
         <preDeploymentTestGroups>in-process</preDeploymentTestGroups>
         <postDeploymentTestGroups>smoke</postDeploymentTestGroups>
-        <github.organization>entando-k8s</github.organization>
+        <github.organization>Villanova-AI</github.organization>
         <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
         <sonar.projectKey>${github.organization}_${project.artifactId}</sonar.projectKey>
-        <entando-k8s-operator-common.version>7.3.0</entando-k8s-operator-common.version>
+        <villanova-k8s-operator-common.version>7.3.0</villanova-k8s-operator-common.version>
         <skipLicenseDownload>true</skipLicenseDownload>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -72,8 +72,8 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>entando-k8s-operator-common</artifactId>
-            <version>${entando-k8s-operator-common.version}</version>
+            <artifactId>villanova-k8s-operator-common</artifactId>
+            <version>${villanova-k8s-operator-common.version}</version>
         </dependency>
         <dependency>
             <groupId>jakarta.validation</groupId>
@@ -163,8 +163,8 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>entando-k8s-operator-common</artifactId>
-            <version>${entando-k8s-operator-common.version}</version>
+            <artifactId>villanova-k8s-operator-common</artifactId>
+            <version>${villanova-k8s-operator-common.version}</version>
             <type>test-jar</type>
             <classifier>tests</classifier>
             <scope>test</scope>
