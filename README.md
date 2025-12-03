@@ -21,4 +21,4 @@ docker build . -f Dockerfile.jvm -t {image}
 
 # Further info
 
-For more information on how to configure this image, please consult the documentation in the [villanova-k8s-operator-common](https://github.com/villanova-k8s/villanova-k8s-operator-common) project
+For more information on how to configure this image, please consult the documentation in the [villanova-k8s-operator-common](https://github.com/Villanova-AI/villanova-k8s-operator-common) project
